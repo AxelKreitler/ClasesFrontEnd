@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TituloPestana</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p><a href="https://www.google.com.ar/">Enlace a Google</a></p>
+    <p><a href="titulos.html">Pagina "titulo", Enlace interno</a></p>
+    <p><a href="https://www.google.com.ar/" target=new()>Enlace a Google en nueva pestaña</a></p>
+    <!-- new() es un atributo que abre una nueva pestaña, hay mas de esos -->
+
+    <img src="..\imagenes\ricky.jpg" alt="imagen de preuba"/>
+    <!-- .. vuelve una carpeta para atras se puede utilizar mas de una vez con / ejemplo ../../etc, en la misma carpeta simplemente se pone el nombre, tambien se pueden links -->
+
+    <!-- Formularios, se usa comunicacion entre el usuario y servidor -->
+    <!-- los atributos nos dicen a donde se envia la informacion y como, action es la ruta, y method es el metodo (post, get , update, delete), name identifica en el servidor el valor asociado-->
+    <form action="#" method="#">
+        <p>
+            <h3>Nombre</h3>
+            <input type="text" placeholder="Nombre" name="nombre" required>
+        </p>
+        <p>
+            <h3>Apellido</h3>
+            <input type="text" placeholder="Apellido" name="apellido" required>
+        </p>
+        <p>
+            <h3>Email</h3>
+            <input type="email" placeholder="Email" name="email" maxlength="40" required>
+        </p>
+        <p>
+            <h3>Password</h3>
+            <input type="password" placeholder="Password" name="password" required>
+        </p>
+        <p>
+            <h3>Comentarios</h3>
+            <textarea name="comentarios" placeholder="Comentarios..." cols="30" rows="10" required></textarea>
+        </p>
+        <p>
+            <h3>Fecha</h3>
+            <input type="date" name="fecha" required>
+        </p>
+        <p>
+            <h3>Imagen</h3>
+            <input type="file" name="foto" required>
+        </p>
+        <p>
+            <h3>Elige tu color favorito</h3>
+            <input type="color" name="color">
+        </p>
+        <!-- El boton envia la informacion al servidor (el tipo submit), el button es un elemento clickeable -->
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+</body>
+</html>
