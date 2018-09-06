@@ -1,0 +1,62 @@
+<!-- Las paginas webs estan maquetadas y basan su estructura en cajas que armamos con ciertas etiquetas, div es un elemento de bloque -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Van todos los estilos CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 3 Index</title>
+</head>
+<body>
+    <!-- 
+        <div class="text-center">
+        <p>
+            El texto que esta dentro de este div estara centrado gracias a la clase en css
+        </p>
+        </div>
+     -->
+
+    <div class="container">
+        <div class="row">
+            <!-- 
+                col-xl-numero solo se nos ve cuando la resolucion sea mayor a 1200px, sin colapsa y se ve una columna abajo de la otra
+                lg es para resoluciones mayores a 996 px
+                md es para resoluciones mayores a 720 px
+                sm es para resoluciones mayores a 5xx px
+                xs se ajusta sin importar el tamaño de la pantalla
+            -->
+            <div class="col-xl-8">
+                <h2>Datos Personales</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore possimus sit, et eum quas commodi suscipit quis mollitia pariatur quae ex asperiores officiis? Fugit quo, sit tempore sunt iusto animi?
+                </p>
+            </div>
+            <div class="col-xl-4">
+                <h2>Foto</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, numquam aliquid. Tempora atque eum pariatur vero deleniti sed ea commodi. Quibusdam quo qui dignissimos distinctio provident tempore eaque nulla doloremque.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- el col se puede poner para cada tamaño y se reemplaza, recordar q el total es 12 -->
+            <div class="col-xl-8 col-lg-7 col-md-6 col-sm-6 col-xs-6">
+                <h2>Datos Personales</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate nulla accusamus beatae porro a labore quos cum, ad nostrum veritatis cupiditate nemo, minima odit et dignissimos dolores provident quo!
+                </p>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6 col-xs-6">
+                <h2>Foto</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quasi iste, ex iusto dolores soluta cumque! Dolorum blanditiis fugiat, ut et aliquid suscipit odio qui saepe vitae! Rem, voluptatem deleniti?
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
