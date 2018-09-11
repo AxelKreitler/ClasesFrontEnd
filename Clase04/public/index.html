@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body style="background-color:grey">
+
+    <!-- nav no va a modificar la interfaz visual, solo es una etiqueta semantica, navbar-expand nos dice en q resolucion debe colapsar la barra de navegacion para adaptarse a diferentes plataformas -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="text-align:center";>
+        <!-- vamos a generar una lista desordenada : ul, que va a tener elementos de lista (<li>) y estos representaran las secciones de nuestra pagina -->
+        <ul class="navbar-nav">
+            <!-- tanto ul como li tienen sus estilos en boostrap que los incorporamos a traves de clases, ml en la clase es cuanto se separan -->
+            <li class="nav-item">
+                <a href="https://www.google.com.ar/" class="nav-link ml-2" style="color:white;">Google</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.google.com.ar/" class="nav-link ml-2">Google</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.google.com.ar/" class="nav-link ml-2">Google</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <form action="#" method="#">
+                    <h3>Nombre</h3>
+                    <div class="form-group">
+                        <!-- form-control expande los inputs a todo lo ancho del contenedor -->
+                        <input type="text" name="nombre" placeholder="Nombre" class="form-control" required> 
+                    </div>
+                    <h3>Apellido</h3>
+                    <div class="form-group">
+                        <input type="text" name="apellido" placeholder="Apellido" class="form-control" required> 
+                    </div>
+                    <h3>DNI</h3>
+                    <div class="form-group">
+                        <input type="text" name="dni" placeholder="DNI" class="form-control" required> 
+                    </div>
+                    <h3>Mail</h3>
+                    <div class="form-group">
+                        <input type="email" name="dni" placeholder="asdfg@hjkl.com" class="form-control" required> 
+                    </div>
+                    <h3>Contraseña</h3>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="*********" class="form-control" required>
+                    </div>
+                    <h3>Confirmar Contraseña</h3>
+                    <div class="form-group">
+                        <input type="password" name="confirmarPassword" placeholder="*********" class="form-control" required>
+                    </div>
+                    <hr> <!-- genera una linea -->
+                    <h3>Descripcion</h3>
+                    <div class="form-group">
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion..." class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h3>Foto</h3> <input type="file" name="foto" class="form-control-file">
+                    </div>
+                    <button type="button" class="btn btn-success">Enviar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-info">Enviar</button>
+                    <button type="button" class="btn btn-dark">Enviar</button>
+                    <button type="button" class="btn btn-link">Enviar</button>
+                    <button type="button" class="btn btn-warning">Enviar</button>
+                    <button type="button" class="btn btn-danger">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <hr>     
+        <div class="row">
+            <div class="col-md">
+                <div class="card text-center" style="background-color:aqua">
+                    <h3 class="card-title">Premium</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, modi dolore commodi id delectus qui nulla nihil ratione accusamus vel, sit tempore molestiae ea rerum quis odio cum doloremque illum!
+                    </p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
+                </div>
+            </div>
+        
+            <div class="col-md">
+                <div class="card text-center" style="background-color:lawngreen">
+                    <h3 class="card-title">Normal</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nemo eius fugiat, quam, temporibus magni neque illo, rerum quia maiores veniam. Nesciunt eligendi voluptate aut vel labore, dolore omnis itaque?
+                    </p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card text-center" style="background-color:lavender">
+                    <h3 class="card-title">Free</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi inventore recusandae aperiam! Expedita reiciendis, nesciunt labore delectus magnam quae quasi quo voluptas dicta quos magni accusamus soluta enim atque!
+                    </p>
+                    <button type="button" class="btn btn-dark">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
