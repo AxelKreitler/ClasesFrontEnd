@@ -1,0 +1,66 @@
+h1,h2{
+    /*Estilos que quiero aplicar a este elemento, propiedad: valor;*/
+    font-size: 32px;
+    /*existen varias unidades de medidas px,cm,em,etc*/
+    font-weight: bold;
+    /*font-weight: 100/200/300/.../900 cuan rellena esta la tipografia*/
+    font-style: italic; /*tambien esta la : normal*/
+    font-family: Arial;
+    color: darkred;
+    text-decoration: underline; /*subrayar, underline double para doble subrayado*/
+    text-align: center; /*Alinear al centro (tambien estan right y left)*/
+    background-color: lightblue;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 200;
+    font-style: normal;
+    font-family: Arial;
+    text-align: justify;
+}
+
+h3,h4,h5{
+    font-weight: bold;
+    font-family: Arial;
+}
+
+/*Herencia*/
+
+p strong{
+    color: olive;
+}
+
+div p span{
+    color: red;
+}
+
+/*Las clases se aplican a una estructura sin importar el elemento q las contengan*/
+/*<h1 class="nombre">Palabra</hi>*/
+
+.resaltado{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blue;
+    text-decoration: underline;
+    
+    font-family: Arial;
+    font-style: normal;
+}
+
+.btn-dark{
+    background-color: red;
+    font-size: 24px;
+}
+
+.parrafoPreso{
+    border: 2px solid magenta;
+    /*El tamaño que tiene el borde*/
+    /*Contorno: solid, dashed, none, dotted*/
+    /*Color*/
+    background-color: lightgrey;
+    height:150px ;
+    width: 50%;
+    margin: auto; 
+    text-align: center;
+}
