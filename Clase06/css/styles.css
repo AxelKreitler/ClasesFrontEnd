@@ -1,0 +1,29 @@
+.contenedor{
+    width: 100%;
+    height: 500px;
+    background-color: darkgrey;
+}
+
+.contenedor h1{
+    font-size: 20px;
+    color: tomato;
+    background-color: green;
+    border: 1px olive;
+    padding: 10px;
+    /*
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    */
+}
+
+.contenedorDos {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+.contenedorDos p {
+    color: white;
+    margin-top: 100px;
+}

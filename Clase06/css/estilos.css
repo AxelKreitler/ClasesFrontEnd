@@ -1,0 +1,30 @@
+/* declaramos las fuentes externas, online o descargadas*/
+
+/*Esto es para el index es una opcion <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* Esta es para agregar una descargada (antes hay q instalar el ttf entrando al mismo) */
+@font-face{
+    /*font family y url donde esta la fuente descargada*/
+    font-family: 'Quicksand-Regular';
+    url: '../fonts/Quicksand-Regular.ttf';
+}
+
+/*Se agrega a los style font-family: 'Roboto', sans-serif;*/
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+h4{
+    font-family: 'Raleway', sans-serif;
+}
+h5{
+    font-family: 'Quicksand-Regular';
+}
