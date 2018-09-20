@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nombre = 'Axel';
+        document.write('Nombre: ' + nombre + '<br>');
+
+        var usuario = prompt('Ingrese su nombre de usuario','Ej: Juan');
+        var apellido = prompt('Ingrese su apellido','Ej: Carlos');
+        var edad = prompt('Ingrese su edad','Ej: 22');
+        document.write("Bienvenido " + usuario + " " + apellido + " tu edad es " + edad)
+        edad = parseInt(edad);
+        var calculo = edad + 10;
+        document.write("<br> Edad +10: " + calculo + "<br>");
+        var edad2 = parseInt(prompt("Ingrese su edad 2", "33"));
+        var calculo2 = edad2+5;
+        document.write("La edad +5 es: " + calculo2 + "<br>");
+        //console.log para mostrar por consola
+        if(edad2 >= 18){
+            document.write("Es mayor de edad<br>");
+        }
+        else{
+            document.write("Es menor de edad<br>");
+        }
+
+        var nota = parseInt(prompt("Ingresa tu nota del 1 al 10","ej 6"));
+        if(nota >= 7){
+            document.write("Aprobado");
+        }
+        if(nota < 7 && nota >= 4){
+            document.write("Aprobado raspando");
+        }
+        if(nota < 4){
+            document.write("No aprobado");
+        }
+
+    </script>
+</body>
+</html>
