@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript 3</title>
+</head>
+<body>
+    <script>
+        /*
+        var usuarioLogin = "Juan";
+        var passwordLogin = "1234";
+
+        var usuario = prompt("ingrese el nombre de usuario", "ejemplo");
+        var password = prompt("ingrese su password", "*******")
+
+        if(usuarioLogin == usuario && passwordLogin == password){
+            alert("Bienvenido: " + usuario);
+        }
+        else{
+            alert("Datos Incorrectos");
+        }
+        */
+
+        var diaCumple = 10;
+        var mesCumple = 08;
+        
+        var dia = parseInt(prompt("Ingrese el dia de su nacimiento"));
+        var mes = parseInt(prompt("Ingrese el mes de su nacimiento"));
+        var ano = parseInt(prompt("Ingrese el ano de su nacimiento"));
+
+        var anocumple = 2018 - ano;
+
+        if(diaCumple == dia && mesCumple == mes){
+            alert("Feliz cumpleaños numero " + anocumple);
+        }
+        else{
+            alert("Hoy no es tu cumpleaños");
+        }
+
+        var fecha = new Date(ano, mes, dia);
+
+        if(fecha.getDate() == dia && fecha.getMonth() == mes){
+            alert("Feliz Cumple, hecho en date");
+        }
+    </script>
+</body>
+</html>

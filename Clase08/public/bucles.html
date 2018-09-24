@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+/*
+        for(var i = 1 ; i<=100 ; i++){
+            document.write(i + "<br>");
+        }
+*/
+        var total = 0;
+        for(var i = 1 ; i <=12 ; i++){
+            var numero = parseInt(prompt("ingresa un numero"));
+            document.write("en la posicion " + i + " escribiste el numero " + numero + "<br>")
+            
+            total += numero;
+        }
+        var promedio = total / 12;
+        document.write("La suma de todos los numeros es " + total + " y el promedio es " + promedio);
+    </script>
+</body>
+</html>
