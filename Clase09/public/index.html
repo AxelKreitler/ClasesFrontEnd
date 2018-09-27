@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 9</title>
+</head>
+<body>
+    <script>
+        /*
+        var x = 1;
+        while(x<=100){
+            document.write(x+"<br>");
+            x++;
+        }
+        */
+        /*
+        function mensaje(){
+            var nombre = prompt("Ingrese su nombre: ", "Juan");
+            document.write("Bienvenido: " + nombre);
+        }
+        mensaje();
+        */
+        /*
+        function numeroIntermedios(j,k){
+            for(var i = j;i<=k;i++){
+                document.write(i+"<br>");
+            }
+
+        }
+
+        var numeroUno = parseInt(prompt("Ingrese el valor inferior"));
+        var numeroDos = parseInt(prompt("Ingrese el valor superior"));
+
+        numeroIntermedios(numeroUno,numeroDos);
+        */
+
+        /*
+        function calcularMenor(a,b,c){
+            if(a < b && a < c){
+                document.write("El primer numero ingresado el numero " + numero1 + " es el inferior");
+            }
+            if(b < a && b < c){ 
+                document.write("El segundo numero ingresado el numero " + numero2 + " es el inferior");
+            }
+            if(c < a && c < b){
+                document.write("El tercer numero ingresado el numero " + numero3 + " es el inferior");
+            }
+        }
+        var numero1 = parseInt(prompt("Ingrese un valor"));
+        var numero2 = parseInt(prompt("Ingrese un valor"));
+        var numero3 = parseInt(prompt("Ingrese un valor"));
+
+        calcularMenor(numero1,numero2,numero3);
+        */
+
+        var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        var persona = ["Juan", 23, true, 2.23, "curso"];
+        document.write(meses[0]+"<br>");
+        document.write(persona[2]+"<br>");
+        document.write(meses.length+"<br>");
+        for(var i = 1 ; i<meses.length ; i++){
+            document.write(meses[i]+"<br>")
+        }
+
+    </script>
+</body>
+</html>

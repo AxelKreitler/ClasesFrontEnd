@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio Clase 9</title>
+</head>
+<body>
+    <script>
+
+        function cargar(arrayFuncion){
+            for(i=1 ; i<=5 ; i++){
+                var valor= parseInt(prompt("Ingresa el valor numerico: "));
+                arrayFuncion.push(valor);
+            }
+        }
+
+        function mostrarElementos(array){
+            for(i=0 ; i<array.length ; i++){
+                document.write(array[i] + "<br>");
+            }
+        }  
+
+        function sumarElementos(array){
+            var sumaTotal = 0;
+            for(var i = 0 ; i < array.length ; i++){
+                sumaTotal += array[i];
+            }
+            document.write("La suma total del array es: " + sumaTotal);
+        }
+
+        var array = [];
+
+        cargar(array);
+        mostrarElementos(array);
+        sumarElementos(array);
+
+    </script>
+</body>
+</html>
