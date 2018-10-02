@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+        var contador = 0;
+
+        function contadorA(){
+            contador++;
+            alert("Se clickeo el boton " +contador+ " veces.");
+        }
+
+        function obtenerDatos(){
+            var nombre = document.getElementById("nombre").value;
+            var edad = document.getElementById("edad").value;
+            alert("Datos obtenidos, Nombre: " + nombre + " Edad: " + edad);
+        }
+    </script>
+    <!-- Eventos -->
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+    <input type="text" id="edad" name="edad" placeholder="Edad"><br>
+    <button type="button" onclick="contadorA()">Incrementemos</button><br>
+    <button type="button" onclick="obtenerDatos()">Obtener Datos</button><br>
+</body>
+</html>

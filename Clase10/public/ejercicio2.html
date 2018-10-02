@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EJ2</title>
+</head>
+<body>
+    <h1>Registro</h1>
+    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required><br>
+    <input type="password" id="pass1" name="pass1" placeholder="Ingrese su password" required><br>
+    <input type="password" id="pass2" name="pass2" placeholder="Confirme su password" required><br>
+    <button type="button" onclick="registro()">Registrar</button><br><br>
+    <span id="mensajeSpan"></span>
+    <script>
+        function registro(){
+            var usuario = document.getElementById("usuario").value;
+            var pass1 = document.getElementById("pass1").value;
+            var pass2 = document.getElementById("pass2").value;
+            
+            if(pass1 == pass2 && pass1.length >= 6)
+                document.getElementById("mensajeSpan").innerHTML = "El usuario ingresado es correcto";
+                //alert("El usuario ingresado es correcto");
+            else
+                document.getElementById("mensajeSpan").innerHTML = "El usuario ingresado es incorrecto, asegurese que las password sean iguales y superiores a 6";
+                //alert("El usuario ingresado es incorrecto, asegurese que las password sean iguales y superiores a 6")
+        }
+    </script>
+</body>
+</html>

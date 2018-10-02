@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        //al cargar la pagina se ejecuta la funcion inicio
+        addEventListener("load", inicio);
+
+        function inicio(){
+            document.getElementById("nombre").focus();
+            document.getElementById("nombre").addEventListener("change", alerta);
+            //se puede usar keypress envez de change para cambiar cuando se presiona una tecla      
+        }
+
+        function alerta(){  
+            if(document.getElementById("nombre").value.length < 5){
+                document.getElementById("mensajeSpan").innerHTML = "El nombre es corto";
+                //alert("El nombre es corto");
+                document.getElementById("nombre").focus();
+            }
+            else{
+                document.getElementById("mensajeSpan").innerHTML = "";
+            }
+        }
+    </script>
+
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+    <span id="mensajeSpan"></span><br>
+    <input type="text" name="dni" id="dni" placeholder="DNI">
+</body>
+</html>
