@@ -1,0 +1,25 @@
+mysql -u root    - Abrimos el shell en el xampp - para conectar la sql con el shell
+
+show databases; - muestra las bases del mysql
+
+use pwi_2018 - pwi_2018 o el nombre de la database a usar
+
+show tables; - muestra las tablas
+
+describe usuarios; - muestra usuarios
+
+insert into usuarios (usuario,password,nombre,apellido,edad) values ("Juancho","1234","Juan","Perez",22);
+
+SELECT usuario FROM `usuarios` - busca y muestra usuario de la base usuarios
+
+SELECT * FROM `usuarios` WHERE usuario="Marta" AND password="1234"
+
+delete from usuarios - borra todo o usar where ej: delete from usuarios where usuario ="Marta"
+
+UPDATE usuarios set nombre = 'Nuevo Nombre' where usuario = 'Marta' - cambio nombre del usuario Marta
+
+--nota de sql_1 se crea la base librerias para usar mas adelante y la importamos
+
+INSERT into libros (titulo,autor,precio) values ("rayuela","corti",600) - Si el ID es autoincremental no hace falta agregarlo
+
+Para el ejercicio del PDF dentro de SQL_1 crear la base de datos sucursal y importar empleados y realizarlo
