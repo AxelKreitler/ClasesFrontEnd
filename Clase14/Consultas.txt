@@ -1,0 +1,15 @@
+SELECT * FROM `libros` where titulo like '%harry%' - %% para buscar entre cualquier parte sino usar %xxx para buscar algo que finalice con xxx o yyy% para buscar algo que comienze con yyy
+
+SELECT * FROM `empleados` where salario=800 or salario=1200 - funcion or es como ||
+
+SELECT COUNT(*) from empleados - calcular cuantos empleados hay
+
+SELECT MIN(salario) from empleados - Funcion MIN / MAX
+
+SELECT * from empleados LIMIT 2 - limita a 2 busquedas
+
+SELECT * from empleados LIMIT 2,2 - el segundo crea un offset a partir de un numero
+
+SELECT * from usuarios join datos on usuarios.usuario = datos.codigoUsuario - machea los datos de la tabla usuarios y el id usuario con la tabla datos y el id codigo usuarios para mostrar todo junto
+
+SELECT usuarios.usuario,datos.nombre,datos.apellido from usuarios join datos on usuarios.usuario = datos.codigoUsuario - obtenemos el id y nombre apellido que estan en distintas tablas
