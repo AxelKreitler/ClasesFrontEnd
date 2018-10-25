@@ -1,0 +1,4 @@
+nota: antes hay que instalar el node.js
+abrir node.js command prompt
+ir a la carpeta que posee el node con el cd
+usar el comando "node archivo.js" para ejecutarlo
