@@ -1,4 +1,5 @@
 const file = require('fs');
+//fs es filesystem manejo de archivo
 
 file.readFile('./archivo1.txt', function(error, datos){
     if(error){

@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+<h2>Subtitulo: {{subtitulo}}</h2>
+
+<p>cantidad alumnos: {{alumnos}}</p>
+{{#each InfoAlumnos}}
+<p>{{nombre}} - {{edad}}</p>
+{{/each}}
+
+<form method="post" action="/login/log">
+    <input type="text" name="nombre">
+    <input type="password" name="password">
+    <button type="submit">Login</button>
+</form>
