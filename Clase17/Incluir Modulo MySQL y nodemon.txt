@@ -1,0 +1,4 @@
+npm install mysql --save - para agregar el modulo de mysql
+
+npm install nodemon -g
+nodemon npm start  - como el npm start pero usando nodemon q permite hacer cambios en tiempo real

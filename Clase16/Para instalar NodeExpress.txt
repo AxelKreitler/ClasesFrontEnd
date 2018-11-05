@@ -1,8 +1,10 @@
 ir a la carpeta en la consola de comando de nodejs
-//ejecutar el npm mostrado en la pagina de express https://expressjs.com/es/
+//ejecutar el npm mostrado en la pagina de express https://expressjs.com/es/ o a continuacion
 podemos usar npm install -g express, lo guardamos globalmente
 npm install express-generator -g, para instalar el generador de estructura
 
 express NodeExpress -hbs, para instalar en la carpeta "NodeExpress" desde donde estamos ubicados la estructura de express
 en la carpeta NodeExpress usar npm install, entra al package.json y instala las dependencias
 npm start para inicializar
+
+npm install mysql --save - para agregar el modulo de mysql
