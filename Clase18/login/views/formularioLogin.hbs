@@ -1,0 +1,10 @@
+<a href="/">Home</a>
+<h1>Login</h1>
+<form action="/login/" method="post">
+    <input type="text" name="usuario">
+    <input type="password" name="password">
+    <button type="submit">Login</button>
+</form>
+{{#if mensaje}}
+<h4>{{mensaje}}</h4>
+{{/if}}
