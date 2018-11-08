@@ -1,12 +1,6 @@
 <h1>Bienvenido {{usuario}}</h1>
-<a href="/panel/logout">Cerrar sesion</a>
 
-<form action="/buscar/" method="post">
-    <input type="text" name="buscar">
-    <button type="submit">Buscar</button>
-</form>
-
-{{#if busqueda}}
+{{#if info}}
     <table class="table table-dark">
 <thead>
     <th>ID</th>
@@ -15,7 +9,7 @@
     <th>Estado</th>
 </thead>
 <tbody>
-{{#each busqueda}}
+{{#each info}}
     <th>{{id_publicacion}}</th>
     <th>{{nombre_usuario}}</th>
     <th>{{publicaciones}}</th>
@@ -27,3 +21,5 @@
 {{else}}
 <h1>No hay resultados</h1>
 {{/if}}
+
+<a href="/panel">Volver</a>

@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var db = require('./db');
+var md5 = require('md5');
 
 router.get('/', function(req,res,next){
     res.render('formularioLogin');
@@ -9,7 +10,7 @@ router.get('/', function(req,res,next){
 router.post('/', function(req,res,next){
     // los req tienen al final en name del form
     var usuario = req.body.usuario;
-    var password = req.body.password;
+    var password = md5(req.body.password);
     var consulta = "select * from usuarios where usuario='"+ usuario +"' and password='"+password+"'";
     db.query(consulta,function(error, resultado){
         if (error) {
