@@ -1,0 +1,3 @@
+express upload --hbs 
+npm install (adentro de upload)
+npm install express-fileupload //permite subir archivos al servidor
