@@ -1,0 +1,6 @@
+Aparte de crear el proyecto:
+express mail --hbs (en una carpeta elegida)
+luego entrar a la carpeta mail y usar npm install
+
+instalamos nodemailer:
+npm install nodemailer
