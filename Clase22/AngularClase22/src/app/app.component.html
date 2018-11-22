@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h3>Angular h3</h3>
+<h2>Bienvenido {{nombre}}, asi que tenes {{edad}} años y sabes programar en {{lenguajes}}</h2>
+<h3>{{nombre}} {{MayorEdad(edad)}}</h3>
+<h3>Juan, los numeros son: {{numeros}}</h3>
+
+<!-- directivas -->
+<table border="1">
+  <tr *ngFor="let lengu of lenguajes">
+    <td>{{lengu}}</td>
+  </tr>
+</table>
+
+<p *ngIf="edadBruno>=18 else condicionEdad">Bruno es mayor de edad</p>
+<ng-template #condicionEdad>
+  <p>Eres menor de edad</p>
+</ng-template>
+<!-- Sin los parentesis alrededor de ngModel no se actualiza la variable, con los parentesis se actualiza -->
+<input type="text" [(ngModel)]="nombre">
+<h4>{{nombre}}</h4>
+{{ModificarNombre()}}
+
+<router-outlet></router-outlet>
+
+<H1>Ejercicio</H1>
+
+<input type="text" [(ngModel)]="usuarioS" placeholder="Usuario">
+<input type="password" [(ngModel)]="passwordS" placeholder="Password">
+<input type="text" [(ngModel)]="sueldosS[0]" placeholder="Sueldo 1">
+<input type="text" [(ngModel)]="sueldosS[1]" placeholder="Sueldo 2">
+<input type="text" [(ngModel)]="sueldosS[2]" placeholder="Sueldo 3">
+<h3>{{CheckUser()}}</h3>
+<h3>La suma de los 3 sueldos: {{CalcularSueldo()}}</h3>
+
