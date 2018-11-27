@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="valor1" type="number" placeholder="Ingrese un valor numerico">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput [(ngModel)]="valor2" type="number" placeholder="Ingrese un valor numerico">
+  </mat-form-field>
+  <br>
+  <mat-checkbox [(ngModel)]="opcion1" class="marginCheckbox">Sumar</mat-checkbox>
+  <mat-checkbox [(ngModel)]="opcion2">Restar</mat-checkbox>
+  <br>
+  <br>
+  <button mat-raised-button color="primary" (click)="operacion()">Calcular</button>
+  <p>{{resultado}}</p>
+
+</div>
+<router-outlet></router-outlet>
